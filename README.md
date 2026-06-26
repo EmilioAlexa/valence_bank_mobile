@@ -103,6 +103,3 @@ screens consume the theme rather than hardcoding styles.
 3. Build out `features/authentication` first (splash → onboarding →
    sign in / sign up → PIN setup), since every other feature depends
    on an authenticated session.
-4. Drop real brand assets (logo, custom font, icon set) into
-   `assets/images`, `assets/fonts`, `assets/icons` and wire up
-   `pubspec.yaml`.
