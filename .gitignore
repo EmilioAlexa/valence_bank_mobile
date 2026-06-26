@@ -1,0 +1,17 @@
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+*.iml
+*.lock
+.idea/
+.vscode/
+ios/Flutter/.last_build_id
+**/Pods/
+**/ios/Flutter/ephemeral/
+**/android/.gradle/
+**/android/captures/
+local.properties
