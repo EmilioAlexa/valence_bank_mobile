@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:valence_mobile/core/constants/theme/theme.dart';
+import 'package:valence_mobile/features/authentication/presentation/pages/login_page.dart';
+import 'package:valence_mobile/features/authentication/presentation/pages/register_page.dart';
 import 'package:valence_mobile/features/dashboard/presentation/pages/dashboard_shell.dart';
 import 'package:valence_mobile/features/maps/presentation/pages/branches_page.dart';
 import 'package:valence_mobile/features/profile/presentation/pages/edit_profile_page.dart';
@@ -25,8 +27,10 @@ class ValenceApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: AppTheme.light,
       darkTheme: AppTheme.dark,
-      home: const DashboardShell(),
+      home: const LoginPage(),
       routes: {
+        LoginPage.routeName: (_) => const LoginPage(),
+        RegisterPage.routeName: (_) => const RegisterPage(),
         BranchesPage.routeName: (_) => const BranchesPage(showAppBar: true),
         EditProfilePage.routeName: (_) => const EditProfilePage(),
         ProfilePage.routeName: (_) => const ProfilePage(showAppBar: true),
